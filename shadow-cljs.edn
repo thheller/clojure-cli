@@ -1,0 +1,14 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ []
+
+ :builds
+ {:cli {:target :node-script
+        :main shadow.clojure.cli/main
+        :output-to "packages/clojure-cli/index.js"
+        :devtools {:enabled false}}}}
