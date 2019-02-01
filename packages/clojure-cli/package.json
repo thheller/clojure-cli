@@ -1,18 +1,21 @@
 {
   "name": "clojure-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "tools-deps-version": "1.10.0.411",
   "description": "unofficial node-based clojure cli tools based on tools.deps.alpha",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "clojure",
+    "clj"
+  ],
+  "author": "Thomas Heller",
+  "url": "https://github.com/thheller/clojure-cli",
   "license": "ISC",
   "dependencies": {
+    "tar": "^4.4.8",
     "which": "^1.3.1"
   },
   "bin": {
-    "sclj": "./index.js"
+    "clj": "./index.js",
+    "clojure": "./index.js"
   }
 }
